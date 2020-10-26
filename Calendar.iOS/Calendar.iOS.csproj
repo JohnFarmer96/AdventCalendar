@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89B772C3-1BD9-4E26-8C08-955E8D7F8561}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Calendar.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Calendar.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>iOS Team Provisioning Profile: com.xamarin.Calendar</CodesignProvision>
+    <CodesignKey>Apple Development: jonathan.bauer96@googlemail.com (8GY4ZCHNR7)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Development: jonathan.bauer96@googlemail.com (8GY4ZCHNR7)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\beacon.ttf" />
+    <BundleResource Include="Resources\Door_Bright.png" />
+    <BundleResource Include="Resources\Door_Gold.png" />
+    <BundleResource Include="Resources\Background\Background_18.jpg" />
+    <BundleResource Include="Resources\Background\Background_24.jpg" />
+    <BundleResource Include="Resources\Background\Background_19.jpg" />
+    <BundleResource Include="Resources\Background\Background_21.jpg" />
+    <BundleResource Include="Resources\Background\Background_20.jpg" />
+    <BundleResource Include="Resources\Background\Background_22.jpg" />
+    <BundleResource Include="Resources\Background\Background_23.jpg" />
+    <BundleResource Include="Resources\Background\Background_9.jpg" />
+    <BundleResource Include="Resources\Background\Background_8.jpg" />
+    <BundleResource Include="Resources\Background\Background_6.jpg" />
+    <BundleResource Include="Resources\Background\Background_7.jpg" />
+    <BundleResource Include="Resources\Background\Background_5.jpg" />
+    <BundleResource Include="Resources\Background\Background_4.jpg" />
+    <BundleResource Include="Resources\Background\Background_1.jpg" />
+    <BundleResource Include="Resources\Background\Background_3.jpg" />
+    <BundleResource Include="Resources\Background\Background_2.jpg" />
+    <BundleResource Include="Resources\Background\Background_12.jpg" />
+    <BundleResource Include="Resources\Background\Background_13.jpg" />
+    <BundleResource Include="Resources\Background\Background_11.jpg" />
+    <BundleResource Include="Resources\Background\Background_10.jpg" />
+    <BundleResource Include="Resources\Background\Background_14.jpg" />
+    <BundleResource Include="Resources\Background\Background_15.jpg" />
+    <BundleResource Include="Resources\Background\Background_17.jpg" />
+    <BundleResource Include="Resources\Background\Background_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_40x40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_60x60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_40x40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_120x120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_180x180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_120x120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_80x80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_58x58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_87x87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_20x20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_29x29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_58x58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_40x40-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_80x80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AdventIcon_1024x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xam.Forms.VideoPlayer">
+      <Version>1.0.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calendar\Calendar.csproj">
+      <Project>{DA3D9B37-D361-4C38-A9FA-976DA2D93D39}</Project>
+      <Name>Calendar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

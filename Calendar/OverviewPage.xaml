@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="Calendar.OverviewPage"
+    BackgroundColor="Black">
+    <ContentPage.Padding>
+        <OnPlatform 
+            x:TypeArguments="Thickness" iOS="0, 0, 0, 0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <Grid Padding="0">
+            <Image
+                Aspect="AspectFill"
+                x:Name="MyBackgroundImage"
+                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            </Image>
+            <Grid
+                Padding="20"
+                RowSpacing="10"
+                ColumnSpacing="10"
+                x:Name="AdventGrid">
+                <Label VerticalOptions="Center" Text="My Advent Calendar" TextColor="#ca9733" FontSize="40" FontFamily="beacon.ttf#beacon" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="Center">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="beacon" />
+                            <On Platform="Android" Value="beacon.ttf#beacon" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
