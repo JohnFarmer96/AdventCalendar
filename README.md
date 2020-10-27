@@ -13,7 +13,7 @@ To customize the Source-Code you will need an access-token that is provided by D
         public static string AccessToken = "";
 ```
 
-Background Images and Layout is fully customizable. 
+Background image, door styling and calendar layout is fully customizable. 
 Example GUI is shown below: 
 
 <img src="https://github.com/JohnFarmer96/AdventCalendar/blob/master/AdventCalendar.png" width="40%">
