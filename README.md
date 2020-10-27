@@ -4,13 +4,13 @@ Simple Advent-Calendar application that will display videos stored in your Dropb
 To customize the Source-Code you will need an access-token that is provided by Dropbox. This token needs to be added to Calendar/App.cs 
 
 ```
-    /// <summary>
-    /// Main application class.
-    /// </summary>
-    public partial class App : Application
-    {
-        // Modify Acces token with your specific Drobpox Token
-        public static string AccessToken = "";
+/// <summary>
+/// Main application class.
+/// </summary>
+public partial class App : Application
+{
+    // Modify Acces token with your specific Drobpox Token
+    public static string AccessToken = "";
 ```
 
 Background image, door styling and calendar layout is fully customizable. 
