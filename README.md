@@ -11,8 +11,6 @@ To customize the Source-Code you will need an access-token that is provided by D
     {
         // Modify Acces token with your specific Drobpox Token
         public static string AccessToken = "";
-        public static DropboxClient MyDropboxClient;
-        public static Dropbox.Api.Users.FullAccount MyDropboxAccount;
 ```
 
 Background Images and Layout is fully customizable. 
